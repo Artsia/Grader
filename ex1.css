@@ -1,0 +1,38 @@
+body
+{
+    background-color: blueviolet;
+    color: white;
+    font-size: large;
+    padding: 0px;
+    margin:0px;
+}
+
+.Container
+{
+    display: flex;
+}
+
+.Container form
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.Container form label
+{
+    padding-bottom:10px;
+    padding-top:5px;
+}
+
+.Container form #userGrade
+{
+    margin-bottom:5px;
+}
+
+.Container form button
+{
+   background-color:#9966ff;
+   border:1px solid black;
+}

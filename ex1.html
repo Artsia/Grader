@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <head>
+            <link rel="stylesheet"  href="ex1.css">
+            <meta charset="utf-8">
+            <title>Grade Calculator</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+           
+
+            <title>Grade</title>
+
+        </head>
+
+        <div class="Container">
+            <form>
+
+                <label for="numberInput"> Enter number between 1 and 100</label>
+                <input type="text" id="userNumber" value="">
+
+                <label for="letterDisplay">Your Grade</label>
+                <input type="text" id="userGrade" value="F">
+                
+                <input  type="button" onclick="gradeHandler();" value="Enter">
+                 
+            </form>    
+        </div>
+        <script src="ex1.js"></script>
+
+        <!--<script type="text/javaScript">
+        
+        /*when called alert the user of the grade letter*/
+                function gradeHandler()
+                {
+
+                    let number = parseInt(document.getElementById("userNumber").value);
+
+                    if(number >= 90 && number <=100)
+                    {
+                        //return A+
+                        document.getElementById("userGrade").value = "A+";
+
+                    }
+                    else if(number >= 80 && number <=89)
+                    {
+                        //return A
+                        document.getElementById("userGrade").value ="A";
+                    }
+                    else if(number >= 75 && number <=79)
+                    {
+                        //return B+
+                        document.getElementById("userGrade").value ="B"+;
+                        
+                    }
+                    else if(number >= 70 && number <=74)
+                    {
+                        //return B
+                        document.getElementById("userGrade").value ="B";
+                    }
+                    else if(number >= 65 && number <=69)
+                    {
+                        //return C+
+                        document.getElementById("userGrade").value ="C+";
+                        
+                    }
+                    else if(number >= 60 && number <=64)
+                    {
+                        //return C
+                        document.getElementById("userGrade").value ="C";
+                        
+                    }
+                    else if(number >= 55 && number <=59)
+                    {
+                        document.getElementById("userGrade").value ="D+";
+                    }
+                    else if(number > 50 && number <=54)
+                    {
+                        //return D
+                        document.getElementById("userGrade").value ="D";
+                    }
+                    else if(number > 40 && number <=49)
+                    {
+                        document.getElementById("userGrade").value ="E";
+                    }
+                    else
+                    {
+                        document.getElementById("userGrade").value ="F";
+                    }
+                }
+        </script>-->
+    </body>
+</html>
